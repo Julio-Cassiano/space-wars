@@ -1,5 +1,5 @@
+import Grid from "./classes/Grid.js";
 import Player from "./classes/Player.js";
-import Projectile from "./classes/Projectile.js";
 
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
@@ -10,6 +10,7 @@ canvas.height = window.innerHeight;
 ctx.imageSmoothingEnabled = false
 
 const player = new Player(canvas.width, canvas.height)
+const grid = new Grid(3, 6);
 const playerProjectiles = [];
 
 const keys = {
@@ -43,8 +44,9 @@ const clearProjectiles = () => {
 const gameLoop = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    console.log(playerProjectiles)
+    grid.invaders.forEach(invader => invader.draw(ctx))
 
+    grid.invaders.forEach((invader) => invader.moveRight());
     drawProjectiles();
     clearProjectiles();
 
