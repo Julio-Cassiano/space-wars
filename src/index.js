@@ -10,26 +10,55 @@ canvas.height = window.innerHeight;
 ctx.imageSmoothingEnabled = false
 
 const player = new Player(canvas.width, canvas.height)
-const p = new Projectile({x: 300, y: 700}, 5)
+const playerProjectiles = [];
 
 const keys = {
     left: false,
     right: false,
+    shoot: {
+        pressed: false,
+        released: true,
+        shoot: {
+            pressed: false,
+            released: true,
+        },
+    },
+};
+
+const drawProjectiles = () => {
+    playerProjectiles.forEach((projectile) => {
+        projectile.draw(ctx);
+        projectile.update()
+    });
+}
+
+const clearProjectiles = () => {
+    playerProjectiles.forEach((projectile, index) => {
+        if (projectile.position.y <= 0){
+            playerProjectiles.splice(index, 1);
+        }
+    });
 };
 
 const gameLoop = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    p.draw(ctx);
+    console.log(playerProjectiles)
+
+    drawProjectiles();
+    clearProjectiles();
 
     ctx.save();
-    p.update();
 
     ctx.translate(
         player.position.x + player.width / 2, 
         player.position.y + player.height / 2
     )
 
+    if (keys.shoot.pressed && keys.shoot.released) {
+        player.shoot(playerProjectiles);
+        keys.shoot.released = false;
+    }
 
     if (keys.left && player.position.x >= 0) {
         player.moveLeft();
@@ -62,6 +91,9 @@ window.addEventListener("keydown", (event) => {
     if (key === "d") {
         keys.right = true;
     }
+    if (key === "enter") {
+        keys.shoot.pressed = true;
+    }
 });
 
 gameLoop();
@@ -74,5 +106,9 @@ window.addEventListener("keyup", (event) => {
     }
     if (key === "d") {
         keys.right = false;
+    }
+    if (key === "enter") {
+        keys.shoot.pressed = false;
+        keys.shoot.released = true;
     }
 });
