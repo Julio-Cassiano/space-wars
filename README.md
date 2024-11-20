@@ -48,7 +48,7 @@ Seguindo a ordem:
 O projeto também possui um arquivo HTML e um CSS. No arquivo HTML existe apenas a tag Canva, que é onde todo o jogo é executado. No arquivo CSS apenas utiliza-se um seletor global para zerar o padding e margin de todo o aruivo HTML.
 
 # Classes:
-**Player**
+## Player
 Essa é a classe principal de todo o projeto, essa classe controla tudo relacionado ao Player, ou seja, a nave. Essa classe possui uma série de atributos, como largura da nave, altura, velocidade e a posição da nave.
 
 ## Métodos da classe player:
