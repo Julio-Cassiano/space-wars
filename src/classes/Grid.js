@@ -1,9 +1,13 @@
-import Invader from "./invader.js";
+import Invader from "./Invader.js";
 
 class Grid {
     constructor(rows, cols){
         this.rows = rows;
         this.cols = cols;
+
+        this.direction = "right";
+        this.moveDown = false;
+
         this.invadersVelocity = 1;
         this.invaders = this.init();
     }
@@ -15,7 +19,7 @@ class Grid {
             for (let col = 0; col < this.cols; col++){
                 const invader = new Invader({
                     x: col * 50 + 20,
-                    y: row * 37 + 20,
+                    y: row * 37 + 120,
                 }, 
                 this.invadersVelocity
 
@@ -26,6 +30,57 @@ class Grid {
         }
 
         return array;
+    }
+
+    draw(ctx){
+        this.invaders.forEach((invader) => invader.draw(ctx));
+    }
+
+    update(playerStatus){
+        if (this.reachedRightBoudary()){
+            this.direction ="left";
+            this.moveDown = true;
+        }else if (this.reachedLeftBoudary()){
+            this.direction = "right"
+            this.moveDown = true;
+        }        
+if(!playerStatus) this.moveDown = false;
+
+        this.invaders.forEach((invader) => {
+            if (this.moveDown) {
+                invader.moveDown();
+                invader.incrementVelocity(0.1);
+                this.invadersVelocity = invader.velocity;
+            }
+
+            if (this.direction === "right") invader.moveRight();
+            if (this.direction === "left") invader.moveLeft();
+            
+        });
+
+        this.moveDown = false;
+    }
+
+    reachedRightBoudary(){
+        return this.invaders.some(
+            (invader) => invader.position.x + invader.width >= innerWidth
+        );
+    }
+
+    reachedLeftBoudary(){
+        return this.invaders.some(
+            (invader) => invader.position.x <= 0
+        );
+    }
+    
+    getRandomInvader(){
+        const index = Math.floor(Math.random() * this.invaders.length);
+        return this.invaders[index];
+    }
+    
+    restart(){
+        this.invaders = this.init();
+        this.direction = "right";
     }
 }
 

@@ -3,6 +3,8 @@ import Projectile from "./Projectile.js";
 
 class Player {
     constructor(canvasWidth, canvasHeight) {
+
+        this.alive = true;
         this.width = 48 * 2;
         this.height = 48 * 2;
         this.velocity = 6;
@@ -80,6 +82,16 @@ class Player {
 
         projectiles.push(p);
     }
+
+    hit(projectile){
+        return(
+            projectile.position.x >= this.position.x + 20 &&
+            projectile.position.x <= this.position.x + 20 + this.width - 38 &&
+            projectile.position.y >= this.position.y + 22 &&
+            projectile.position.y <= this.position.y + 22 + this.height - 34
+        );
+    }
+
 }
 
 export default Player;
