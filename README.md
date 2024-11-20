@@ -15,10 +15,10 @@ Este repositório contém todo o processo de desenvolvimento do jogo Space-Wars,
 - 🔄 **Controles**: Os controles do jogo funcionam de maneira simples, o jogador utiliza as teclas "A" e "D" para movimentar a nave e a tecla "Enter" para atirar.
 
 ## 🔑 Tecnologias utilizadas:
-    O objetivo inicial era desenvolver um jogo divertido, e que ao mesmo tempo fosse simples. Após a escolha do tema, seguindo a ideia de um jogo simples, foi decidido construir o jogo utilizando as tecnologias HTML, CSS e JavaScript sendo essa a predominante. Não utilizamos nenhuma biblioteca durante o desenvolvimento do projeto, apenas o JavaScript puro.
+O objetivo inicial era desenvolver um jogo divertido, e que ao mesmo tempo fosse simples. Após a escolha do tema, seguindo a ideia de um jogo simples, foi decidido construir o jogo utilizando as tecnologias HTML, CSS e JavaScript sendo essa a predominante. Não utilizamos nenhuma biblioteca durante o desenvolvimento do projeto, apenas o JavaScript puro.
 
 ## 📈 Complexidade do jogo:
-    O jogo tem uma complexidade baixa, pois é simples, 2D, ocorre em um único cenário e roda no navegador, não exigindo grande processamento. No entanto, algumas partes do código têm complexidade maior. Por exemplo, na classe Grid, há um método chamado init(), que gera a horda de inimigos. Dentro desse método, há um loop **for** aninhado em outro loop **for**, resultando em uma complexidade de O(n²), ou tempo quadrático, de acordo com a notação Big O.
+O jogo tem uma complexidade baixa, pois é simples, 2D, ocorre em um único cenário e roda no navegador, não exigindo grande processamento. No entanto, algumas partes do código têm complexidade maior. Por exemplo, na classe Grid, há um método chamado init(), que gera a horda de inimigos. Dentro desse método, há um loop **for** aninhado em outro loop **for**, resultando em uma complexidade de O(n²), ou tempo quadrático, de acordo com a notação Big O.
 
 # 💻 Documentação:
 Todo o projeto possui os seguintes diretórios:
