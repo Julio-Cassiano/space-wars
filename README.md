@@ -63,7 +63,7 @@ A classe player possui alguns métodos, são esses:
 
 **shoot(projectiles)** = esse método serve para disparar o projétil da nave. Ele instancia dentro de um objeto P a classe Projectile.
 
-# Classe Projectile
+## Classe Projectile
 Essa classe será usada para criar os projéteis que são atirados. Ela tem como atributo *position, width, height, velocity* e esse atributos controlam o tamanho e velocidade do projétil.
 
 ## Métodos:
