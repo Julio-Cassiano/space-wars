@@ -72,3 +72,44 @@ Essa classe será usada para criar os projéteis que são atirados. Ela tem como
 **update()**: esse método controla o movimento do projetil, ele é executado varias vezes para movimentar o projetil.
 Link das imagens:
 https://foozlecc.itch.io/void-main-ship
+## Classe Grid
+Essa classe cria uma matriz de "Invasores" e os posiciona na grade, tambem define a
+ velocidade e verifica se os invasores atingiram o limite de tela.
+
+## Métodos:
+**draw()**: esse metodo faz o desenha os "Invasores".
+
+**update()**: esse metodo atualiza a posição de cada invasor de acordo com a direção atual.
+
+**reachedRightBoudary()** **e** **reachedLeftBoudary()** verificam se algum invasor atingiu o limite direito ou esquerdo da tela, respectivamente.
+
+## classe Invader
+Encapsula as propriedades e comportamentos de um "Invasor" no jogo. Ela é responsável por gerenciar a posição, velocidade, desenho e disparo dos invasores, além de verificar se foram atingidos por projéteis.
+
+## Métodos
+
+**shoot()** cria um novo projétil e o adiciona à lista de projéteis.
+
+**hit()** verifica se o invasor foi atingido por um projétil.
+
+**moveLeft():*
+Decrementa a coordenada x da posição do invasor pela sua velocidade atual.
+Isso resulta no movimento do invasor para a esquerda na tela.
+
+**moveRight():**
+Incrementa a coordenada x da posição do invasor pela sua velocidade atual.
+Isso resulta no movimento do invasor para a direita na tela.
+
+**moveDown()**
+Incrementa a coordenada y da posição do invasor pela sua altura.
+Isso faz com que o invasor se mova para baixo na tela, usado quando os invasores chegam ao limite da tela.
+
+**incrementVelocity(boost)**
+Incrementa a velocidade do invasor pelo valor do parâmetro boost.
+Isso aumenta a velocidade de movimento do invasor, tornando-o mais rápido.
+
+
+
+
+
+
