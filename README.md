@@ -6,8 +6,8 @@ Este repositório contém todo o processo de desenvolvimento do jogo Space-Wars,
 ## 👥 Participantes
 
 - 👤 Julio Cassiano | RGM: 32156308
-- 👤 Bruno de Alencar | RGM: 
-- 👤 João Victor | RGM: 
+- 👤 Bruno de Alencar | RGM: 30632391
+- 👤 João Victor | RGM: 32088493
 
 # 📘 Space Wars
 - 📖 **Obejtivo do jogo**: O jogo Space Wars se passe no espaço, em uma guerra entre alienígenas e seres humanos. O jogador controle uma nave e tem como objetivo matar todos os inimigos sem morrer durante a batalha.
