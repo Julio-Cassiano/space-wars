@@ -4,6 +4,7 @@ export const PATH_ENGINE_SPRITES = "src/assets/images/engine_sprites.png"
 export const TRIANG_IMG = "src/assets/images/triangulo"
 export const PATH_INVADER_IMG = "src/assets/images/invader.png"
 export const INITIAL_FRAMES = 8;
+export const NEW_SPACESHIP = "src/assets/images/spaceship2.png"
 export const GameState = {
     START: "start",
     PLAYING: "playing",

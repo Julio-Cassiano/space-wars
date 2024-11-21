@@ -1,4 +1,4 @@
-import { INITIAL_FRAMES, PATH_ENGINE_IMAGE, PATH_ENGINE_SPRITES, PATH_SPACESHIP_IMAGE } from "../utils/constants.js";
+import { INITIAL_FRAMES, NEW_SPACESHIP, PATH_ENGINE_IMAGE, PATH_ENGINE_SPRITES, PATH_SPACESHIP_IMAGE } from "../utils/constants.js";
 import Projectile from "./Projectile.js";
 
 class Player {
@@ -14,7 +14,7 @@ class Player {
             y: canvasHeight - this.height - 30,
         };
 
-        this.image = this.getImage(PATH_SPACESHIP_IMAGE);
+        this.image = this.getImage(NEW_SPACESHIP);
         this.engineImage = this.getImage(PATH_ENGINE_IMAGE);
         this.engineSprites = this.getImage(PATH_ENGINE_SPRITES);
 
