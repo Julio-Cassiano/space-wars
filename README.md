@@ -15,6 +15,8 @@ Este repositório contém todo o processo de desenvolvimento do jogo Space-Wars,
 
 - 🔄 **Controles**: Os controles do jogo funcionam de maneira simples, o jogador utiliza as teclas "A" e "D" para movimentar a nave e a tecla "Enter" para atirar.
 
+- 🕹️ **Como jogar?**: Jogue Space Wars clicando em **[JOGAR AGORA](https://spacewars-game.vercel.app)**, divirta-se! 😄
+
 ## 🔑 Tecnologias utilizadas:
 O objetivo inicial era desenvolver um jogo divertido, e que ao mesmo tempo fosse simples. Após a escolha do tema, seguindo a ideia de um jogo simples, foi decidido construir o jogo utilizando as tecnologias HTML, CSS e JavaScript sendo essa a predominante. Não utilizamos nenhuma biblioteca durante o desenvolvimento do projeto, apenas o JavaScript puro.
 
