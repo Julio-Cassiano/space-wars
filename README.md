@@ -2,6 +2,7 @@
 
 ## 📜 Descrição
 Este repositório contém todo o processo de desenvolvimento do jogo Space-Wars, inspirado no jogo Space Invaders
+**Vídeo da demo do jogo:** https://youtu.be/ifpGrog198o
 
 ## 👥 Participantes
 
