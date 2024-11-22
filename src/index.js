@@ -310,10 +310,10 @@ const gameLoop = () => {
 window.addEventListener("keydown", (event) => {
     const key = event.key.toLocaleLowerCase()
     
-    if (key === "a") {
+    if (key === "a" || key === "arrowleft") {
         keys.left = true;
     }
-    if (key === "d") {
+    if (key === "d" || key === "arrowright") {
         keys.right = true;
     }
     if (key === "enter") {
@@ -327,10 +327,10 @@ window.addEventListener("keydown", (event) => {
 window.addEventListener("keyup", (event) => {
     const key = event.key.toLocaleLowerCase()
 
-    if (key === "a") {
+    if (key === "a" || key === "arrowleft") {
         keys.left = false;
     }
-    if (key === "d") {
+    if (key === "d" || key === "arrowright") {
         keys.right = false;
     }
     if (key === "enter") {
