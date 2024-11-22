@@ -13,7 +13,7 @@ Este repositório contém todo o processo de desenvolvimento do jogo Space-Wars,
 # 📘 Space Wars
 - 📖 **Obejtivo do jogo**: O jogo Space Wars se passe no espaço, em uma guerra entre alienígenas e seres humanos. O jogador controle uma nave e tem como objetivo matar todos os inimigos sem morrer durante a batalha.
 
-- 🔄 **Controles**: Os controles do jogo funcionam de maneira simples, o jogador utiliza as teclas "A" e "D" para movimentar a nave e a tecla "Enter" para atirar.
+- 🔄 **Controles**: Os controles do jogo funcionam de maneira simples, o jogador utiliza as teclas "A" e "D" ou teclas direcionais para movimentar a nave e a tecla "Enter" para atirar.
 
 - 🕹️ **Como jogar?**: Jogue Space Wars clicando em **[JOGAR AGORA](https://spacewars-game.vercel.app)**, divirta-se! 😄
 
