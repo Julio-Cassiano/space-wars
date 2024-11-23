@@ -10,6 +10,8 @@ Este repositório contém todo o processo de desenvolvimento do jogo Space-Wars,
 - 👤 Bruno de Alencar | RGM: 30632391
 - 👤 João Victor | RGM: 32088493
 
+---
+
 # 📘 Space Wars
 - 📖 **Obejtivo do jogo**: O jogo Space Wars se passe no espaço, em uma guerra entre alienígenas e seres humanos. O jogador controle uma nave e tem como objetivo matar todos os inimigos sem morrer durante a batalha.
 
@@ -22,6 +24,8 @@ O objetivo inicial era desenvolver um jogo divertido, e que ao mesmo tempo fosse
 
 ## 📈 Complexidade do jogo:
 O jogo tem uma complexidade baixa, pois é simples, 2D, ocorre em um único cenário e roda no navegador, não exigindo grande processamento. No entanto, algumas partes do código têm complexidade maior. Por exemplo, na classe Grid, há um método chamado init(), que gera a horda de inimigos. Dentro desse método, há um loop **for** aninhado em outro loop **for**, resultando em uma complexidade de O(n²), ou tempo quadrático, de acordo com a notação Big O.
+
+---
 
 # 💻 Documentação:
 Todo o projeto possui os seguintes diretórios:
@@ -50,6 +54,8 @@ Seguindo a ordem:
 
 O projeto também possui um arquivo HTML e um CSS. No arquivo HTML existe apenas a tag Canva, que é onde todo o jogo é executado. No arquivo CSS apenas utiliza-se um seletor global para zerar o padding e margin de todo o aruivo HTML.
 
+---
+
 # Classes:
 ## Player
 Essa é a classe principal de todo o projeto, essa classe controla tudo relacionado ao Player, ou seja, a nave. Essa classe possui uma série de atributos, como largura da nave, altura, velocidade e a posição da nave.
@@ -75,3 +81,22 @@ Essa classe será usada para criar os projéteis que são atirados. Ela tem como
 **update()**: esse método controla o movimento do projetil, ele é executado varias vezes para movimentar o projetil.
 Link das imagens:
 https://foozlecc.itch.io/void-main-ship
+
+---
+
+## SoundEffects
+
+Essa é a classe de configuração do sistema de som do jogo. A classe possui funções de reproduzir os sons de disparo, explosões, danos, restart e ajuste do volume.
+
+## Métodos:
+A classe possui 5 métodos, tais métodos são:
+
+**playShootSound()**: Reproduz o som de disparo, alternando entre diferentes sons de disparo, se houver mais de um disponível. O som será reiniciado sempre que for tocado.
+
+**playHitSound()** = Reproduz o som de impacto (dano), alternando entre diferentes sons de impacto, se houver mais de um disponível.
+
+**playExplosionSound()** = Reproduz o som de explosão. Este som não possui alternância e será tocado sempre que chamado.
+
+**playNextLevelSound()** = Reproduz o som de transição para o próximo nível. Assim como a explosão, esse som será tocado toda vez que o método for chamado.
+
+**adjustVolumes()** = Ajusta o volume dos diferentes tipos de som para uma configuração padrão. Este método define volumes específicos para sons de disparo, impacto, explosões e transições de nível.
