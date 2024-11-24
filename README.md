@@ -83,7 +83,7 @@ Essa classe cria uma matriz de "Invasores" e os posiciona na grade, tambem defin
 
 **reachedRightBoudary()** **e** **reachedLeftBoudary()** verificam se algum invasor atingiu o limite direito ou esquerdo da tela, respectivamente.
 
-## classe Invader
+## Classe Invader
 Encapsula as propriedades e comportamentos de um "Invasor" no jogo. Ela é responsável por gerenciar a posição, velocidade, desenho e disparo dos invasores, além de verificar se foram atingidos por projéteis.
 
 ## Métodos
