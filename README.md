@@ -92,7 +92,7 @@ Encapsula as propriedades e comportamentos de um "Invasor" no jogo. Ela é respo
 
 **hit()** verifica se o invasor foi atingido por um projétil.
 
-**moveLeft():*
+**moveLeft():**
 Decrementa a coordenada x da posição do invasor pela sua velocidade atual.
 Isso resulta no movimento do invasor para a esquerda na tela.
 
